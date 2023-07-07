@@ -45,7 +45,7 @@ def pedirJugada(jugador):
         print('Esa casilla ya está usada!!')
         return pedirJugada(jugador)
     else:
-        if inputJugada > 9:
+        if inputJugada > 9 or inputJugada < 0:
             print('---Debes elegir un número entre el 1 y el 9!!!')
             return pedirJugada(jugador)
         return inputJugada
